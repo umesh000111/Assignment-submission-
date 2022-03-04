@@ -1,0 +1,15 @@
+#take list from user and take target from user and check list this target is in list or not 
+lst1 = []
+NUM = int(input("enter the number: "))
+for i in range(0,NUM):
+    ele = int(input(""))
+    lst1.append(ele)
+print(lst1)
+#lst1 = [12,68,32,65,56]
+target = int(input("enter the target: "))
+for i in lst1:
+    if (i== target):
+        print(lst1.index(i))
+        break
+else:
+    print("target is not match in list")
